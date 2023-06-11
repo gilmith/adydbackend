@@ -3,6 +3,7 @@ package com.jacobo.adyd.entities;
 import jakarta.persistence.Column;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
+import jakarta.persistence.NamedQuery;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,6 +16,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@NamedQuery(name = "TiradaSalvacion.findByCategoriaNivel", 
+query = "SELECT ts FROM TiradaSalvacion ts WHERE ts.id.nivel = :nivel AND ts.id.categoria.nombre = :nombre")
 public class TiradaSalvacion {
 
     @EmbeddedId

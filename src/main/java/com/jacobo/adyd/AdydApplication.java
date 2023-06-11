@@ -13,17 +13,4 @@ public class AdydApplication {
 		SpringApplication.run(AdydApplication.class, args);
 	}
 
-	@Bean
-	public WebMvcConfigurer corsConfigurer()
-	{
-	   String[] allowDomains = new String[2];
-	   allowDomains[0] = "http://localhost:4200";
-
-	   return new WebMvcConfigurer() {
-	      @Override
-	      public void addCorsMappings(CorsRegistry registry) {
-	         registry.addMapping("/**").allowedOrigins(allowDomains);
-	      }
-	   };
-	}
 }
