@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @NamedQuery(name = "TiradaSalvacion.findByCategoriaNivel", 
-query = "SELECT ts FROM TiradaSalvacion ts WHERE ts.id.nivel = :nivel AND ts.id.categoria.nombre = :nombre")
+query = "SELECT ts FROM TiradaSalvacion ts WHERE ts.id.nivel = :nivel AND ts.id.categoria.id = :idCategoria")
 public class TiradaSalvacion {
 
     @EmbeddedId

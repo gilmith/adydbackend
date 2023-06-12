@@ -34,6 +34,7 @@ public class CORSFilter {
 		corsConfiguration.setAllowedHeaders(this.allowedHeaders);
 		corsConfiguration.setExposedHeaders(this.exposedHeaders);
 		corsConfiguration.addAllowedOrigin("http://localhost:4200");
+		corsConfiguration.addAllowedOrigin("http://129.151.225.83");
 		
 		urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
 

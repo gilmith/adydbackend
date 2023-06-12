@@ -11,6 +11,6 @@ import com.jacobo.adyd.entities.TiradaSalvacionId;
 @RepositoryRestResource
 public interface TiradaSalvacionRepository extends JpaRepository<TiradaSalvacion, TiradaSalvacionId> {
 	
-	public Optional<TiradaSalvacion> findByCategoriaNivel(@Param("nivel") int nivel, @Param("nombre") String nombre);
+	public Optional<TiradaSalvacion> findByCategoriaNivel(@Param("nivel") int nivel, @Param("idCategoria") Long idCategoria);
 
 }
