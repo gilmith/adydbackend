@@ -45,6 +45,9 @@ public class SecurityConfig {
 						.requestMatchers(HttpMethod.GET, "/alineamientoes/**").authenticated()
 						.requestMatchers(HttpMethod.GET, "/tiradaSalvacions/**").authenticated()
 						.requestMatchers(HttpMethod.GET, "/categoriaEspeciales/**").authenticated()
+						.requestMatchers(HttpMethod.POST, "/personaje").authenticated()
+						.requestMatchers(HttpMethod.GET, "/habilidadesLadron/**").authenticated()
+						.requestMatchers(HttpMethod.GET, "/modificadoresLadron/**").authenticated()
 						
 		);
 		http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);

@@ -1,4 +1,4 @@
-package com.jacobo.adyd.login.model;
+package com.jacobo.adyd.validators;
 
 import org.springframework.validation.annotation.Validated;
 
