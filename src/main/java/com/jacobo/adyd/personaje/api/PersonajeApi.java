@@ -1,4 +1,4 @@
-package com.jacobo.adyd.login.api;
+package com.jacobo.adyd.personaje.api;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.jacobo.adyd.login.model.Confirm;
-import com.jacobo.adyd.login.model.Personaje;
+import com.jacobo.adyd.personaje.model.Personaje;
 
 import jakarta.validation.Valid;
 

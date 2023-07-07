@@ -1,4 +1,4 @@
-package com.jacobo.adyd.login.api;
+package com.jacobo.adyd.personaje.api;
 
 import java.util.UUID;
 
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.cloud.FirestoreClient;
 import com.jacobo.adyd.login.model.Confirm;
-import com.jacobo.adyd.login.model.Personaje;
+import com.jacobo.adyd.personaje.model.Personaje;
 
 import jakarta.validation.Valid;
 import lombok.val;
