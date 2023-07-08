@@ -38,3 +38,15 @@ update categoria set puntos_pericias='2' where nombre='clerigo';
 update categoria set puntos_pericias='2' where nombre='druida';
 update categoria set puntos_pericias='2' where nombre='bardo';
 update categoria set puntos_pericias='2' where nombre='ladron';
+
+alter table categoria add puntos_pericias_no_armas number;
+
+
+update categoria set puntos_pericias_no_armas='3' where nombre='guerrero';
+update categoria set puntos_pericias_no_armas='3' where nombre='paladin';
+update categoria set puntos_pericias_no_armas='3' where nombre='guardabosques';
+update categoria set puntos_pericias_no_armas='4' where nombre='mago';
+update categoria set puntos_pericias_no_armas='4' where nombre='clerigo';
+update categoria set puntos_pericias_no_armas='4' where nombre='druida';
+update categoria set puntos_pericias_no_armas='3' where nombre='ladron';
+update categoria set puntos_pericias_no_armas='3' where nombre='bardo';
