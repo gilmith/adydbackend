@@ -1,6 +1,7 @@
 package com.jacobo.adyd.repository;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;
@@ -20,4 +21,6 @@ public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 			@Param(value = "carisma")Integer carisma			
 			);
 
+	public Optional<Categoria> findById(Long id);
+	
 }

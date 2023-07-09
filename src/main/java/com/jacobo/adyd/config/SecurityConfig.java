@@ -48,7 +48,8 @@ public class SecurityConfig {
 						.requestMatchers(HttpMethod.POST, "/personaje").authenticated()
 						.requestMatchers(HttpMethod.GET, "/habilidadesLadron/**").authenticated()
 						.requestMatchers(HttpMethod.GET, "/modificadoresLadron/**").authenticated()
-						
+						.requestMatchers(HttpMethod.GET, "/pericias/**").authenticated()
+						.requestMatchers(HttpMethod.GET, "/periciasNoArmas/**").authenticated()
 		);
 		http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 		return http.build();

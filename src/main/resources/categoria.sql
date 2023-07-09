@@ -28,3 +28,25 @@ insert into categoria (id, nombre, minimo_destreza, dado_golpe)  values ((select
 insert into categoria (id, nombre, minimo_destreza, minimo_inteligencia, minimo_carisma,dado_golpe)  values ((select next value for seq_categoria from dual), 'bardo', 12, 13, 15,6);
 
 
+alter table categoria add  puntos_pericias number;
+
+update categoria set puntos_pericias='4' where nombre='guerrero';
+update categoria set puntos_pericias='4' where nombre='paladin';
+update categoria set puntos_pericias='4' where nombre='guardabosques';
+update categoria set puntos_pericias='1' where nombre='mago';
+update categoria set puntos_pericias='2' where nombre='clerigo';
+update categoria set puntos_pericias='2' where nombre='druida';
+update categoria set puntos_pericias='2' where nombre='bardo';
+update categoria set puntos_pericias='2' where nombre='ladron';
+
+alter table categoria add puntos_pericias_no_armas number;
+
+
+update categoria set puntos_pericias_no_armas='3' where nombre='guerrero';
+update categoria set puntos_pericias_no_armas='3' where nombre='paladin';
+update categoria set puntos_pericias_no_armas='3' where nombre='guardabosques';
+update categoria set puntos_pericias_no_armas='4' where nombre='mago';
+update categoria set puntos_pericias_no_armas='4' where nombre='clerigo';
+update categoria set puntos_pericias_no_armas='4' where nombre='druida';
+update categoria set puntos_pericias_no_armas='3' where nombre='ladron';
+update categoria set puntos_pericias_no_armas='3' where nombre='bardo';

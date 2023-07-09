@@ -30,6 +30,12 @@ public class Categoria extends MapperSuper{
 	@Column(name="DADO_GOLPE")
 	private Integer dadoGolpe;
 	
+	@Column(name="PUNTOS_PERICIAS")
+	private Integer puntosPericias;
+	
+	@Column(name="PUNTOS_PERICIAS_NO_ARMAS")
+	private Integer puntosPericiasNoArmas;
+	
 
 	
 

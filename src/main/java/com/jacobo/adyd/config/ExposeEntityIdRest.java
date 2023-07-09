@@ -14,6 +14,8 @@ import com.jacobo.adyd.entities.HabilidadesDestreza;
 import com.jacobo.adyd.entities.HabilidadesFuerza;
 import com.jacobo.adyd.entities.HabilidadesInteligencia;
 import com.jacobo.adyd.entities.HabilidadesSabiduria;
+import com.jacobo.adyd.entities.PericiasArmas;
+import com.jacobo.adyd.entities.PericiasCategoria;
 import com.jacobo.adyd.entities.Raza;
 import com.jacobo.adyd.entities.TiradaSalvacion;
 
@@ -32,6 +34,7 @@ public class ExposeEntityIdRest implements RepositoryRestConfigurer {
 		config.exposeIdsFor(Raza.class);
 		config.exposeIdsFor(Alineamiento.class);
 		config.exposeIdsFor(TiradaSalvacion.class);		
+		config.exposeIdsFor(PericiasArmas.class);
 		config.setDefaultMediaType(MediaType.APPLICATION_JSON);
 
 	}
